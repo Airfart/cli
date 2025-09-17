@@ -1,1 +1,8 @@
 
+
+Forcing Password Change:
+You can force a user to change their password at their next login by expiring the password with the command $sudo passwd -e <username> or $sudo chage -d 0 <username>.
+
+Check all the users with $cut -d: -f1 /etc/passwd
+
+Delete user with $sudo deluser <username>

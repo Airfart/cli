@@ -1,0 +1,55 @@
+#GNU Screen Setup and guide thru
+
+		What Is Linux Screen?
+		
+	Linux Screen is a command-line utility for creating and managing multiple Terminal sessions.
+	It lets you create a virtual shell whose process remains running even after the user disconnects from the server.
+	With Screen, VPS users can leave an SSH session and continue where they left off.
+	It is available in most Linux distributions, including Debian and RHEL-based operating systems.
+
+	INSTALL SCREEN WITH $sudo apt-get install screen
+
+(USE the down settings on your main-laptop, or if you prefer a other)
+Step 1. You need to have a ssh server running follow the upcoming commands if needed
+		$sudo apt-get update
+		$sudo apt-get install openssh-server
+ -	Now check if the server is operating
+		$sudo systemctl status ssh
+ -	You'll need to see something like
+		Active: active (running)
+	If not then start it with
+		$sudo systemctl start ssh
+	If you want the server to automaticly start after a reboot?
+		$sudo systemctl enable ssh
+ -	Now search the IP-address of the ssh-server
+		$ip a
+	Look for something like inet 192.168.x.x beneath your active network interface (for example wlan0 or eth0) For example:
+		inet 192.168.1.42/24
+	This is the IP address you'll need to connect
+
+ -	Mow make a connection from a second laptop using ssh
+		$ssh <username>@192.168.1.42
+
+!You'll get a warning at the first time ("Are you sure you want to continue connecting?")
+--> type yes. After you are asked a password of that user.
+
+If that succeeded, you'll have a fully completed shell of the other laptop on your terminal.
+
+#Now you combine this with GNU Screen
+
+IF you now use $screen -S  sessie, on your SSH-server running laptop,
+And you type $ssh <username>192.168.1.42
+			 $screen -x sessie
+
+You will now share a realtime on screen
+
+
+<!>EXTRA: MAKE SSH MORE SECURE(For later)
+If in the furute you want to acces via internet/
+
+ * CHange the port number in /etc/ssh/sshd_config
+
+ * Disable Password-Login and start working with SSH-Keys
+
+ *Use software(fail2ban or ufw) (firewall)
+ 

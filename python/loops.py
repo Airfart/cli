@@ -34,6 +34,7 @@ time.sleep (2.5)
 clr()
 
 #The loop
+# psoi ? WTF is dat voor een naam voor een Variabele?
 psoi = int(input("Please give me a positive number: "))
 while (psoi > 0):
     

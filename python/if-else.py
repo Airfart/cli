@@ -19,6 +19,7 @@ age = int(input("Wat is je leeftijd: "))
 clr()
 print ("Very cool in 20 years you will be",age + 20)
 time.sleep (3)
+
 #If-Else 
 if age > max:
     print ("You are old enough")

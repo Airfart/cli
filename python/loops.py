@@ -36,7 +36,10 @@ while getal > 0:
 time.sleep(2)
 print("De som van de positieve getallen is:", totaal)
 
+
 # --- FOR LOOP OPDRACHT ---
+# -- 
+# -- 2 versies
 # -- 
 # -- Checks:
 # -- Fout controle toegevoegd voordat de routine begint. 
@@ -46,7 +49,42 @@ print("De som van de positieve getallen is:", totaal)
 # -- Ingevoerd CIJFER mag daarna wel negatief zijn.
 
 
-print("The For -")  # debugging
+# --- FOR LOOP Versie 1 ---
+# -- 
+clr()
+typer("The For - Versie 1 -")  # debugging
+print("Input counter i+ tellen.")  # debugging
+time.sleep(1.5)
+
+while True:
+    try:
+        aantal = int(input("Hoeveel getallen wil je invoeren?: "))
+        if aantal <= 0:
+            print("Voer een positief aantal in.")
+            continue
+        break
+    except ValueError:
+        print("Ongeldige invoer. Voer een geheel getal in.")
+
+totaal = 0
+
+for i in range(aantal):
+    while True:
+        try:
+            getal = int(input(f"Voer getal {i + 1}e in: ")) # Counter i + 1 
+            totaal += getal
+            break
+        except ValueError:
+            print("Ongeldige invoer. Voer een geheel getal in.")
+
+print("De som van de getallen is:", totaal)
+
+
+# --- FOR LOOP Versie 2 ---
+# -- 
+clr()
+typer("The For - Versie 2 -")  # debugging
+print("Uitgbreide meldingen.")  # debugging
 time.sleep(1.5)
 
 while True:
@@ -74,3 +112,10 @@ for i in range(aantal):
             print(f"Ongeldige invoer bij getal {i + 1}: voer een geldig geheel getal in, zoals -5, 0 of 12.")
 
 # Resultaten tonen
+
+print("\n✅ Resultaten:")
+print("Ingevoerde getallen:", getallen)
+print("Som van de getallen:", totaal)
+print("Gemiddelde waarde:", totaal / aantal)
+print("Hoogste getal:", max(getallen))
+print("Laagste getal:", min(getallen))

@@ -20,6 +20,8 @@ def typer(text, delay=0.05):
 typer("initializing................100% OK")
 
 # --- WHILE LOOP OPDRACHT ---
+# --
+
 typer("Hello, how are you?")
 typer("I will ask you a positive number. Please only give positive ones")
 time.sleep(2.5)
@@ -37,6 +39,24 @@ time.sleep(2)
 print("The total is:" ,totaal)
 
 # --- FOR LOOP OPDRACHT ---
+# -- 
+# -- 
+# -- 2 versies
+# -- 
+# -- Checks:
+# -- Fout controle toegevoegd voordat de routine begint. 
+# -- 
+# -- Vooorwaarden (Conditions):
+# -- AANTAL getallen moet positief zijn.
+# -- Ingevoerd CIJFER mag daarna wel negatief zijn.
+
+
+# --- FOR LOOP Versie 1 ---
+# -- 
+clr()
+typer("The For - Versie 1 -")  # debugging
+print("Input counter i+ tellen.")  # debugging
+
 #print("The For -")  # debugging
 time.sleep(1.5)
 
@@ -68,6 +88,7 @@ print("De som van de getallen is:", totaal)
 
 # --- FOR LOOP Versie 2 ---
 # -- 
+
 clr()
 typer("The For - Versie 2 -")  # debugging
 print("Uitgbreide meldingen.")  # debugging

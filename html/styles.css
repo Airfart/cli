@@ -57,7 +57,7 @@
     margin: 20px auto;
     padding:20px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* opacity: 20%; */
+    /* opacity: 20%; werkt niet */
     background-blend-mode: soft-light;
     background: -100px -25px no-repeat url('freddie2.png');
  }
@@ -79,10 +79,18 @@
      text-decoration: underline;
  }
 
- /** Classes
+/** Classes
 *
 * Elke sectie en net iets andere kleur maken.
 * 
 */
 
 .feitenlijst { padding: 50px 0 0 75px; }
+
+
+/** ID
+*
+* \
+* 
+*/
+#sizing-image {width: 200px; height:5px;}

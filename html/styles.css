@@ -11,7 +11,7 @@
      margin: 0;
      padding: 0;
      background-color: #ffffff;
-     background:100px 100px no-repeat url('grass4.svg');
+     background:bottom no-repeat url('grass4.svg');
      color: #000000;
     background-blend-mode: screen;
  }
@@ -53,7 +53,9 @@
  main {
     background-color: transparent;
     max-width: 800px;
+    min-height:100%;
     margin: 20px auto;
+    height
     padding:20px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* opacity: 20%; */
@@ -62,6 +64,7 @@
  }
 
  footer {
+
      background-color: #222;
      color: white;
      text-align: center;

@@ -55,12 +55,11 @@
     max-width: 800px;
     min-height:100%;
     margin: 20px auto;
-    height
     padding:20px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* opacity: 20%; */
     background-blend-mode: soft-light;
-    background:-100px -25px no-repeat url('freddie2.png');
+    background: -100px -25px no-repeat url('freddie2.png');
  }
 
  footer {

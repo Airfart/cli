@@ -25,7 +25,7 @@ typer("I will ask you a positive number. Please only give positive ones")
 time.sleep(2.5)
 clr()
 
-typer("The Loop -")  # debugging
+#typer("The Loop -")  # debugging
 totaal = 0
 getal = int(input("Please give me a positive number: "))
 
@@ -34,26 +34,10 @@ while getal > 0:
     getal = int(input("Please give me a positive number: "))
 
 time.sleep(2)
-print("De som van de positieve getallen is:", totaal)
-
+print("The total is:" ,totaal)
 
 # --- FOR LOOP OPDRACHT ---
-# -- 
-# -- 2 versies
-# -- 
-# -- Checks:
-# -- Fout controle toegevoegd voordat de routine begint. 
-# -- 
-# -- Vooorwaarden (Conditions):
-# -- AANTAL getallen moet positief zijn.
-# -- Ingevoerd CIJFER mag daarna wel negatief zijn.
-
-
-# --- FOR LOOP Versie 1 ---
-# -- 
-clr()
-typer("The For - Versie 1 -")  # debugging
-print("Input counter i+ tellen.")  # debugging
+#print("The For -")  # debugging
 time.sleep(1.5)
 
 # - Aantal keer invoeren en controleren op positieve waarden.

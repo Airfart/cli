@@ -6,7 +6,7 @@ import time
 
 # Functie om scherm te wissen
 def clr():
-os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 # Functie om tekst langzaam te typen
 def typer(text, delay=0.05):

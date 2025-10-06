@@ -17,7 +17,7 @@ def typer(text, delay=0.05):
     print()
 
 # Start
-typer(".........................OK")
+typer("initializing................100% OK")
 
 # --- WHILE LOOP OPDRACHT ---
 typer("Hello, how are you?")

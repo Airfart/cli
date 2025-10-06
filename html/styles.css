@@ -3,6 +3,7 @@
 * Deze styles passen mijn bestaande HTML Tags aan. 
 * Hiermee voeg ik de foto van Freddy Mercury toe.
 * 
+* Color: #207bd1
 */
 
  body {
@@ -10,7 +11,7 @@
      margin: 0;
      padding: 0;
      background-color: #ffffff;
-     background:100px 100px no-repeat url('freddie2.png');
+     background:100px 100px no-repeat url('grass4.svg');
      color: #000000;
     background-blend-mode: screen;
  }
@@ -57,6 +58,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* opacity: 20%; */
     background-blend-mode: soft-light;
+    background:-100px -25px no-repeat url('freddie2.png');
  }
 
  footer {
@@ -82,4 +84,3 @@
 */
 
 .feitenlijst { padding: 50px 0 0 75px; }
-.freddiebg {background-image:  ;}

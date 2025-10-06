@@ -37,16 +37,40 @@ time.sleep(2)
 print("De som van de positieve getallen is:", totaal)
 
 # --- FOR LOOP OPDRACHT ---
+# -- 
+# -- Checks:
+# -- Fout controle toegevoegd voordat de routine begint. 
+# -- 
+# -- Vooorwaarden (Conditions):
+# -- AANTAL getallen moet positief zijn.
+# -- Ingevoerd CIJFER mag daarna wel negatief zijn.
+
+
 print("The For -")  # debugging
 time.sleep(1.5)
 
-aantal = int(input("Hoeveel getallen wil je invoeren?: "))
+while True:
+    try:
+        aantal = int(input("Hoeveel getallen wil je invoeren?: "))
+        if aantal <= 0:
+            print("Ongeldige invoer: het aantal moet een positief geheel getal zijn groter dan nul.")
+            continue
+        break
+    except ValueError:
+        print("Ongeldige invoer: je moet een geheel getal invoeren, bijvoorbeeld 3 of 10.")
+
 totaal = 0
+getallen = [] # Getallen opslaan in een ARRAY
 
-# for i in range(0, aantal, 1): (nog niet getest)
-
+# Vraag om de getallen zelf
 for i in range(aantal):
-    getal = int(input(f"Voer getal {i + 1} in: ")) # Zie je i+ als een iteratie.
-    totaal += getal
+    while True:
+        try:
+            getal = int(input(f"Voer geheel getal {i + 1} in (mag negatief zijn): "))
+            getallen.append(getal)
+            totaal += getal
+            break
+        except ValueError:
+            print(f"Ongeldige invoer bij getal {i + 1}: voer een geldig geheel getal in, zoals -5, 0 of 12.")
 
-print("De som van de getallen is:", totaal)
+# Resultaten tonen

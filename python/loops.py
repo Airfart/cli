@@ -56,10 +56,11 @@ typer("The For - Versie 1 -")  # debugging
 print("Input counter i+ tellen.")  # debugging
 time.sleep(1.5)
 
+# - Aantal keer invoeren en controleren op positieve waarden.
 while True:
     try:
         aantal = int(input("Hoeveel getallen wil je invoeren?: "))
-        if aantal <= 0:
+        if aantal <= 0: 
             print("Voer een positief aantal in.")
             continue
         break
@@ -68,6 +69,7 @@ while True:
 
 totaal = 0
 
+# - Getallen invoeren (keer 't aantal) en invoer controleren of numerieke INT waarden.
 for i in range(aantal):
     while True:
         try:
@@ -87,6 +89,8 @@ typer("The For - Versie 2 -")  # debugging
 print("Uitgbreide meldingen.")  # debugging
 time.sleep(1.5)
 
+# - Aantal keer invoeren en controleren op positieve waarden.
+
 while True:
     try:
         aantal = int(input("Hoeveel getallen wil je invoeren?: "))
@@ -100,7 +104,7 @@ while True:
 totaal = 0
 getallen = [] # Getallen opslaan in een ARRAY
 
-# Vraag om de getallen zelf
+# - Getallen invoeren (keer 't aantal) en invoer controleren of numerieke INT waarden.
 for i in range(aantal):
     while True:
         try:

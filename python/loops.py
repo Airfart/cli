@@ -46,7 +46,7 @@ totaal = 0
 # for i in range(0, aantal, 1): (nog niet getest)
 
 for i in range(aantal):
-    getal = int(input(f"Voer getal {i + 1} in: "))
+    getal = int(input(f"Voer getal {i + 1} in: ")) # Zie je i+ als een iteratie.
     totaal += getal
 
 print("De som van de getallen is:", totaal)

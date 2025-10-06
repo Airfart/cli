@@ -117,7 +117,7 @@ for i in range(aantal):
 
 # Resultaten tonen
 
-print("\n✅ Resultaten:")
+print("\n Resultaten:")
 print("Ingevoerde getallen:", getallen)
 print("Som van de getallen:", totaal)
 print("Gemiddelde waarde:", totaal / aantal)

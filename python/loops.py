@@ -43,7 +43,6 @@ time.sleep(1.5)
 aantal = int(input("Hoeveel getallen wil je invoeren?: "))
 totaal = 0
 
-# Probeer dit eens: 
 # for i in range(0, aantal, 1): (nog niet getest)
 
 for i in range(aantal):

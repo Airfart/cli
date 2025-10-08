@@ -36,19 +36,30 @@ print("Please give me a time in hours.")
 time.sleep (2)
 print("You can choose between 0-23")
 time.sleep (2)
-    
+
+#While True loop
+#Ik heb toegevoegd dat alles tussen 0-5 nacht is en alles vanaf 6 ochtend is.
+#Ook heb ik de optie om exit te typen toegevoegd.
+
 while True:
     try:
-        uur = int(input("Wat is het huidige uur? (0-23): "))
+        invoer = input("Wat is het huidige uur? (0-23 of typ 'exit' om te stoppen): ")
 
-        if 0 <= uur <= 11:
+        if invoer.lower() == 'exit':
+            print("Programma wordt gestopt.")
+            break  # Stop de while-loop
+
+        uur = int(invoer)
+
+        if 0 <= uur <= 5:
+            print("Het is nacht")
+        elif 6 <= uur <= 11:
             print("Het is ochtend")
         elif 12 <= uur <= 17:
             print("Het is middag")
         elif 18 <= uur <= 23:
             print("Het is avond")
         else:
-            print("Je hebt een ongeldige uur ingevuld!")
-            #break  # stop de loop bij ongeldige invoer
+            print("Je hebt een ongeldig uur ingevuld!")
     except ValueError:
-        print("Ongeldige invoer! Vul een getal in.")
+        print("Ongeldige invoer! Vul een getal in of typ 'exit' om te stoppen.")

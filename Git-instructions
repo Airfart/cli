@@ -1,8 +1,23 @@
+## Git Config Commands
 
-Ik mis de git config --global instructies, maarja dan gaat ie zeiken over REFS
+git config --global instructies, maarja dan gaat ie zeiken over REFS
 
+
+## Fixing Commit conflicts:
+#
+# 1 Wanneer commiten niet lukt kun je dit proberen:
+# - Je laatste commit terug draaien naar HEAD.
+# - Meerdere commits bv. 8x terug gaan met 8~HEAD
+#
+# 2 Branche conflicts:
+# - https://stackoverflow.com/questions/13106179/error-fatal-not-possible-to-fast-forward-aborting
+
+
+## Is dit een git commando? Waarom staat dit in deze file?
 Forcing Password Change:
-You can force a user to change their password at their next login by expiring the password with the command $sudo passwd -e <username> or $sudo chage -d 0 <username>.
+You can force a user to change their password at their next login by expiring the password with the command 
+
+$sudo passwd -e <username> or $sudo chage -d 0 <username>.
 
 Check all the users with $cut -d: -f1 /etc/passwd
 

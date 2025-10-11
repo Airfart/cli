@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+# Opdracht CS leerjaar 1 - Opdracht ?
+#
+# Status: Ingeleverd
+#
+# Omschrijving: In deze opdracht moeten wij Array, for-loop, while-loop, if-elif-else gebruiken
+# Bijlage: zie afbeelding opdracht-9.png
+
+
 import sys
 import os
 import time

@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+# Opdracht CS leerjaar 1 - Opdracht ?
+#
+# Status: Ingeleverd
+#
+# Omschrijving: In deze opdracht moeten wij Array
+
 #Imports
 import sys
 import os

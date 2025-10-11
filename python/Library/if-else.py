@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+# Opdracht CS leerjaar 1 - Opdracht ?
+#
+# Status: Ingeleverd
+#
+# Omschrijving: if else
+
+
 import time
 import os
 import sys

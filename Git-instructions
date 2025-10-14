@@ -12,6 +12,7 @@ git config --global instructies, maarja dan gaat ie zeiken over REFS
 # 2 Branche conflicts:
 # - https://stackoverflow.com/questions/13106179/error-fatal-not-possible-to-fast-forward-aborting
 
+## Understandig - http://graphite.dev/guides/git-fast-forward-merge
 
 ## Is dit een git commando? Waarom staat dit in deze file?
 Forcing Password Change:

@@ -1,0 +1,10 @@
+# Factory reset Windows 11, 
+#
+# systemreset.exe
+# systemreset --factoryreset
+#
+# Open Command Prompt: Search for "Command Prompt" in the Start menu, 
+# right-click it, and select "Run as administrator". 
+
+
+

@@ -1,0 +1,13 @@
+    ChromeOS replacement LINUX setup
+    https://docs.chrultrabook.com/docs/installing/distros.html#libinput-configuration1
+
+
+Keyboard mapping
+libinput configuration
+Put this in /etc/libinput/local-overrides.quirks: (Source)
+
+
+[keyd virtual keyboard]
+MatchName=keyd virtual keyboard
+AttrKeyboardIntegration=internal
+ModelTabletModeNoSuspend=1

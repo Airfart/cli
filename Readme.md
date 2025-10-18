@@ -7,6 +7,15 @@ This repository is using as personal notebook for:
 * Computer logics and fundamentals.
 * Understand Networking.
 
+## Directories
+
+`Linux/` - Linux aantekening voor de CLI.
+`Manuals/Git-instructions.md` - Handleidingen en losse aantekening.
+`Networking/` - Network Essentials.
+`Programming/Python` - Programmeren.
+`Markup/html` - WebDesign.
+
+
 ## Learning Markup-, Scripting and Programming languages.
 
 ### Readme.md in Markdown format.
